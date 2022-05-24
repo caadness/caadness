@@ -1,0 +1,101 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAADNESS SHOP</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <header>
+        <img src="./Logo caadness blanco.png" alt="">
+        <nav>
+            <ul class="nav">
+                <li><a href="http://caadness.atwebpages.com/">Inicio</a></li>
+                <li><a href="#">Ropa</a>
+                    <ul>
+                        <li><a href="#">Hombre</a>
+                            <ul>
+                                <li><a href="./index.html">Partes de arriba</a></li>
+                                <li><a href="./abajo_hombre.html">Partes de abajo</a></li>
+                                <li><a href="./calzado.html">Calzado</a></li>
+                                <li><a href="./inetrior_hombre.html">Ropa interior</a></li> 
+                            </ul>
+                        </li> 
+                        <li><a href="#">Mujer</a>
+                            <ul>
+                                <li><a href="./index.html">Partes de arriba</a></li>
+                                <li><a href="./abajo_mujer.html">Partes de abajo</a></li>
+                                <li><a href="./calzado.html">Calzado</a></li>
+                                <li><a href="./interior_mujer.html">Ropa interior</a></li> 
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="./accesorios.html">Accesorios</a></li>
+                <li><a href="./comida.html">Comida</a></li>
+                <li><a href="./suplementos.html">Suplementos</a></li>
+                <li><a href="./caadpoints.html">CAADPOINTS</a></li>
+            </ul>
+        </nav>
+        <div id="compra">
+            <button id="pagar" onclick="pay()"></button>
+            <a href="./compradatos.html"><img src="./carrito.png" alt=""></a>
+        </div>
+    </header>
+    <main>
+    <div id="container" class="container">
+        <div class="box">
+            <h3 class="name">PARTE INFERIOR</h3>
+            <button class="buy" onclick="add('product-1', 35)">AGREGAR</button>
+            <div class="circle"></div>
+            <img src="./m1.png" class="product" alt="blackshirt">
+            <p>35€</p>
+        </div>
+        <div class="box">
+            <h3 class="name">PARTE INFERIOR</h3>
+            <button class="buy" onclick="add('product-2', 35)">AGREGAR</button>
+            <div class="circle"></div>
+            <img src="./m2.jpg" class="product" alt="blackshirt">
+            <p>35€</p>
+        </div>
+        <div class="box">
+            <h3 class="name">PARTE INFERIOR</h3>
+            <button class="buy" onclick="add('product-3', 35)">AGREGAR</button>
+            <div class="circle"></div>
+            <img src="./m3.png" class="product" alt="blackshirt">
+            <p>35€</p>
+        </div>
+        <div class="box">
+            <h3 class="name">PARTE INFERIOR</h3>
+            <button class="buy" onclick="add('product-4', 35)">AGREGAR</button>
+            <div class="circle"></div>
+            <img src="./m4.png" class="product" alt="blackshirt">
+            <p>35€</p>
+        </div>
+        <div class="box">
+            <h3 class="name">PARTE INFERIOR</h3>
+            <button class="buy" onclick="add('product-5', 35)">AGREGAR</button>
+            <div class="circle"></div>
+            <img src="./m5.png" class="product" alt="blackshirt">
+            <p>35€</p>
+        </div>
+        <div class="box">
+            <h3 class="name">PARTE INFERIOR</h3>
+            <button class="buy" onclick="add('product-6', 35)">AGREGAR</button>
+            <div class="circle"></div>
+            <img src="./m6.png" class="product" alt="blackshirt">
+            <p>35€</p>
+        </div>
+    </div>
+    </main>
+    <script src="./vanilla-tilt.min.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".box"), {
+		max: 25,
+		speed: 400
+	});
+    </script>
+</body>
+</html>

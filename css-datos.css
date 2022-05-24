@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+*{
+    font-family: 'Righteous';
+}
+
+#logo{
+    width: 40%;
+    margin-top: 0;
+}
+
+body {
+    background-color: #131313;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.wrapper {
+    margin-top: 5%;
+    width: 60%;
+   
+    display: flex;
+    justify-content: center;
+    background-color: #131313;
+    border: 3px #fff solid;
+    -webkit-box-shadow: 9px 13px 25px 0px rgba(0, 0, 0, 0.18);
+    -moz-box-shadow: 9px 13px 25px 0px rgba(0, 0, 0, 0.18);
+    box-shadow: 9px 13px 25px 0px rgba(0, 0, 0, 0.18);
+    animation: slideUp 2000ms ease;
+    border-radius: 20px;
+
+}
+
+.container {
+    width: 65%;
+    padding: 5% 10%;
+}
+
+h1 {
+    align-self: center;
+}
+
+form {
+    width: 100%;
+
+}
+
+    input {
+        width: 100%;
+        min-height: 25px;
+        border: 0;
+        font-size: 1rem;
+        letter-spacing: .15rem;
+        margin-top: 5px;
+        color: black;
+        border-radius: 4px;
+    }
+
+    label {
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 2px;
+        color: #fff;
+    }
+
+    h1 {
+        font-size: 24px;
+        line-height: 10px;
+        color: #fff;
+        letter-spacing: 1px;
+    }
+
+    h1:nth-of-type(2) {
+        margin-top: 10%;
+    }
+
+
+.name {
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+}
+.name div {
+    width: 45%;
+}
+
+.address-info {
+    display: flex;
+    justify-content: space-between;
+
+   
+}
+.address-info  div {
+    width: 30%;
+}
+
+.cc-info {
+    display: flex;
+    justify-content: space-between;
+
+   
+}
+.cc-info div {
+        width: 45%;
+    }
+
+.btns {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    flex-wrap: wrap;
+    margin: 2px;
+    height: 30px;
+    width: 200px;
+    color: #cfc9e1;
+    background-color: #131313;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: .3rem;
+    letter-spacing: 2px;
+    text-align: center;
+    text-decoration: none;
+    align-items: center;
+    border: 1px solid #fff;
+}
+
+.pay{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#pagar{
+    margin: 2px;
+    height: 30px;
+    width: 200px;
+    color: #fff;
+    background-color: transparent;
+    border: 0;
+    border-radius: .3rem;
+    letter-spacing: 2px;
+    text-align: center;
+    text-decoration: none;
+    align-items: center;
+}
+button{
+    float: left;
+    margin: 2px;
+    height: 30px;
+    width: 200px;
+    color: #cfc9e1;
+    background-color: #000000;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: .3rem;
+    letter-spacing: 2px;
+
+}
+
+@keyframes btn-hov {
+    100% {
+        background-color: #cfc9e1;
+        color: #4a3b76;
+        transform: scale(1.05)
+    }
+}
+
+input:focus,
+button:focus {
+    outline: none;
+}
+
+@media (max-width: 736px) {
+    .wrapper {
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    form h1 {
+        text-align: center;
+    }
+
+    .name,
+    .address-info,
+    .cc-info {
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .street,
+    .cc-num {
+        text-align: center;
+    }
+
+    input {
+        margin: 5px 0;
+        min-height: 30px;
+    }
+}
+.button {
+    color: #ffffff;
+    background-color: #24cf5f;
+    padding: 12px 25px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 2px;
+    outline: 0;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
+    transition: all .2s; }
+    .button:hover, .button:active, .button:focus {
+      -ms-transform: scale(1.1);
+          transform: scale(1.1); }
+  
+  .button--transparent {
+    background: transparent;
+    border: 0;
+    outline: 0; }
+  
+  .button--close {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    width: 30px;
+    height: 30px;
+    color: #ffffff;
+    border-radius: 50%;
+   
+    z-index: 10; }
+    .button--close svg {
+      width: 20px;
+      height: 20px; }
+      .button--close svg * {
+        fill: currentColor; }
+    .button--close:hover, .button--close:active, .button--close:focus {
+      color: #ff2bae;
+      background-color: #ffffff;
+      box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.1); }
+  

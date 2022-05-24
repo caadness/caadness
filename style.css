@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Righteous', sans-serif;
+}
+
+body{
+    background: #131313;
+}
+
+header{
+    margin: 0;
+    padding: 0;
+    background: #131313;
+    border-right: 1px solid #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header img{
+    width: 250px;
+}
+
+#pagar{
+    font-size: x-large;
+    background: #4B4B4B;
+    color: #fff;
+    height: fit-content;
+}
+
+#pagar:hover{
+    color: red;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+nav{
+    z-index: 20;
+}
+
+.nav li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.nav > li{
+    float: left;
+}
+
+.nav li ul{
+    display: none;
+    position: absolute;
+    min-width: fit-content;
+}
+
+.nav li:hover > ul{
+    display: block;
+}
+
+.nav li ul li{
+    position: relative;
+}
+
+.nav li ul li ul{
+    right: -140px;
+    top: 0px;
+}
+
+.nav li a:hover{
+    background-color: rgb(94, 94, 94);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #131313;
+}
+
+h2{
+    color: #fff;
+    margin: 10px;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1200px;
+    transform-style: preserve-3d;
+}
+
+.container .box{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 50px;
+    background: #232322;
+    border-radius: 20px;
+    transform-style: preserve-3d;
+}
+
+.container .box::before{
+    content: 'CAAD';
+    position: absolute;
+    top: 20px;
+    left: 35px;
+    font-size: 5em;
+    font-weight: 900;
+    color: #fff;
+    font-style: italic;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.container .box:hover::before,
+.container .box:hover::after{
+    opacity: 0.04; 
+}
+
+.container .box::after{
+    content: 'SHOP';
+    position: absolute;
+    bottom: 20px;
+    left: 60px;
+    font-size: 4em;
+    font-weight: 900;
+    color: #fff;
+    font-style: italic;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.container .box .name{
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    transform-style: preserve-3d;
+    transform: translate3d(0,0,110px);
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 20;
+}
+
+.container .box:hover .name{
+    top: 40px;
+    opacity: 1;
+}
+
+.container .box .buy{
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%,0,75px);
+    color: #fff;
+    background: #333;
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+}
+
+.container .box .buy:hover{
+    color: red;
+}
+
+.container .box:hover .buy{
+    bottom: 30px;
+    opacity: 1;
+}
+
+
+
+.container .box .circle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition: 0.5s;
+    background: #fff;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%,-50%,50px);
+    opacity: 1;
+    z-index: 10;
+}
+
+.container .box .product{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 275px;
+    transition: 0.5s;
+    z-index: 11;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%,-50%,50px);
+}
+
+.container .box:hover .product{
+    transform: translate3d(-50%,-50%,100px) rotate(-20deg);
+}
+
+.container .box:nth-child(1) .circle,
+.container .box:nth-child(1) .buy{
+    background-color: black;
+}
+
+.container .box:nth-child(2) .circle,
+.container .box:nth-child(2) .buy{
+    background-color: #6D6868;
+}
+
+.container .box:nth-child(3) .circle,
+.container .box:nth-child(3) .buy{
+    background-color: #5B5B5B;
+}
+
+.container .box:nth-child(4) .circle,
+.container .box:nth-child(4) .buy{
+    background-color: #1D2A42;
+}
+
+.container .box:nth-child(5) .circle,
+.container .box:nth-child(5) .buy{
+    background-color: #4B4B4B;
+}
+
+.container .box:nth-child(6) .circle,
+.container .box:nth-child(6) .buy{
+    background-color: #9D9D9D;
+}
+
+#container p {
+    color: white;
+    position: relative;
+    margin-top: 360px;
+    margin-left: 230px;
+    font-size: 25px;
+}
+
+#compra img {
+    max-width: 80px;
+    position: relative;
+    top: 10px;
+}
+
+@media screen and (max-width: 900px) {
+
+    #compra {
+        margin-top: 120px;
+    }
+    
+}
