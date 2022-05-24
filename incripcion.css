@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap%27');
+*{
+    background-color: #131313;
+    font-family: 'Righteous', sans-serif;
+    color: gray;}
+
+form{
+    text-align: center;
+}
+header>div>img{
+    width: 250px;
+    height: 160px;
+    margin-left: 500px;
+}

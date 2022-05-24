@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <header>
+        <div><img src="./Logo caadness blanco.png" alt=""></div>
+    </header>
+<main>
+<section id="section1">
+    <form>
+        <p>Nombre</p><input type="text/">
+
+        <p>Apellidos</p><input type="text/">
+
+        <p>Género</p><select>
+            <option>Masculino</option>
+            <option>Femenino</option>
+          </select>
+
+          <p>Correo Electronico</p>
+          <input type="email" placeholder="example@example.com">
+
+        <p>Fecha de nacimiento</p><input type="date">
+
+        <p>Peso</p><input type="number">
+
+        <p>Altura (en cm)</p><input type="number">
+</section>
+
+<section id="section2">
+        
+        <p>¿Practícas algún deporte?</p>
+            <input type="radio"  value="Si">Si
+            <input type="radio"  value="No">No
+        <p>Cual/es</p><textarea></textarea>
+
+        <p>¿Te gustaría trabajar alguna parte del cuerpo en especifico?</p>
+            <label><input type="checkbox" name="Fullbody">Fullbody</label>
+            <label><input type="checkbox" name="Pecho">Pecho</label>
+            <label><input type="checkbox" name="brazos">Brazos y Hombros</label>
+            <label><input type="checkbox" name="abs">Abdominales y espalda</label>
+            <label><input type="checkbox" name="piernas">Piernas</label>
+
+        <p>Comentarios para la rutina</p>
+            <textarea></textarea>
+
+
+        <p>Que dias asistes al gimnasio</p>
+            <label><input type="checkbox" name="Lunes">Lunes</label>
+            <label><input type="checkbox" name="Martes">Martes</label>
+            <label><input type="checkbox" name="Miercoles">Miercoles</label>
+            <label><input type="checkbox" name="Jueves">Jueves</label>
+            <label><input type="checkbox" name="Viernes">Viernes</label>
+            <label><input type="checkbox" name="Viernes">Sabado</label>
+            <label><input type="checkbox" name="Viernes">Domingo</label>
+            <br> <br>
+            
+            
+
+<button onclick="myFunction()">Enviar</button>
+
+<script>
+function myFunction() {
+  alert("Formulari enviat al equip de caadness, de seguida tindrás la teva rutina");
+}
+</script>
+                    </div>
+                </div>
+                </div>
+            </div>
+          </select>
+        </form>
+    </section>  
+    </main>
+</body>
+</html>
